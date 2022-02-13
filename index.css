@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.inicio {
+    height: 100vh;
+    background-image: url('hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+
+.navegador {
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.navegador-titulo {
+    color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegador-contenedor {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navegador-titulo h1 {
+    font-size: 1.5rem;
+}
+
+.navegador-titulo h1 span {
+    color: rgb(0, 162, 255);
+}
+
+.navegador-contenedor a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navegador-contenedor a:hover {
+    text-decoration: underline;
+}
+
+.inicio-textos {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio-textos h1 {
+    font-size: 2rem;
+}
+
+.inicio-textos p {
+    font-size: 1.5rem;
+}
+
+.quienes {
+    margin-bottom: 50px;
+}
+
+.quienes-contenedor {
+    height: 250px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quienes-contenedor h1 {
+    font-size: 2.3rem;
+    border-bottom: 5px solid #800080;
+    margin-bottom: 20px;
+}
+
+.aque-nos-dedicamos {
+    background-color: #f2f2f2;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.aque-nos-dedicamos > h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    padding: 20px 0;
+}
+
+.aque-nos-dedicamos-contenedor {
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.aque-nos-dedicamos-textos {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.123);
+    margin: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.aque-nos-dedicamos-textos span {
+    background-color: purple;
+    color: white;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.aque-nos-dedicamos-textos p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.contacto {
+    margin-bottom: 50px;
+}
+
+.contacto-contenedor {
+    height: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    justify-items: center;
+}
+
+.contacto-form {
+    width: 60%;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.315);
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contacto-form input, textarea{
+    display: block;
+    width: 90%;
+    height: 60px;
+    margin: 10px auto;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contacto-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contacto-form button {
+    background-color: rgb(100, 149, 237);
+    padding: 20px 40px;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 3px;
+}
+
+.contacto-svg img{
+    width: 100%;
+    height: 450px;
+}
+
+.contacto-svg {
+    grid-column: 2 / -1;
+}
+
+.contacto-svg::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(65, 105, 225);
+    top: 0;
+    left: 0;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    z-index: -1;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.863);
+    height: 200px;
+}
+
+.footer-contenedor {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-contenedor h1 span {
+    color: rgb(0, 162, 255);
+}
+
+.footer-contenedor p {
+    margin-bottom: 10px;
+}
+
+.footer-contenedor a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 802px) {
+    .navegador {
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .navegador-titulo {
+        margin-top: 10px;
+        width: 100%;
+        height: 80px;
+    }
+
+    .aque-nos-dedicamos {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .aque-nos-dedicamos-contenedor {
+        flex-wrap: wrap;
+    }
+
+    .contacto-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-svg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 507px){
+    .navegador {
+        height:auto;
+        background-color: black;
+    }
+
+    .navegador-contenedor {
+        flex-wrap: wrap;
+    }
+
+    .navegador-contenedor a {
+        padding: 10px;
+        margin: 10px;
+        border-bottom: 2px solid white;
+    }
+
+    .inicio-textos {
+        margin-top: 20px;
+        height: 50%;
+    }
+
+    .inicio-textos h1 {
+        margin-bottom: 10px;
+    }
+}
+
